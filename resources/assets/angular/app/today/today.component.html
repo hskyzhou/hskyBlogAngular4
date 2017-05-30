@@ -1,0 +1,10 @@
+<div>
+	<a routerLink="/app/today/create">添加工作</a>
+	<ul>
+		<li *ngFor="let work of works" [class.edit]="">
+			<span>{{work.hours}}</span>
+			<span>{{work.name}}</span>
+			<span>修改</span>
+		</li>
+	</ul>
+</div>

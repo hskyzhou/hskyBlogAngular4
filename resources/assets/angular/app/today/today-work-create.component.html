@@ -1,0 +1,23 @@
+<form action="">
+	<div>
+		<label for="">工作内容</label>
+		<input type="text" ([ngModel])="work.name">
+	</div>
+	<div>
+		<label for="">工作时长</label>
+		<input type="text" ([ngModel])="work.hours">
+	</div>
+	<div>
+		<label for="">工作类型</label>
+		<input type="text" ([ngModel])="work.type">
+	</div>
+	<div>
+		<label for="">工作项目</label>
+		<input type="text" ([ngModel])="work.project">
+	</div>
+
+	<div>
+		<button (click)="createWork()">添加</button>
+		<a routerLink="/app/today">返回</a>
+	</div>
+</form>
