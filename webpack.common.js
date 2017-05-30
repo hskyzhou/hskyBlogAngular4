@@ -34,12 +34,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: '/Users/zhouwen/PhpProjects/laravelAngular/resources/assets/angular/app',
+        exclude: '/Users/zhouwen/PhpProjects/hskyBlogAngular/resources/assets/angular/app',
         loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
       },
       {
         test: /\.css$/,
-        include: '/Users/zhouwen/PhpProjects/laravelAngular/resources/assets/angular/app',
+        include: '/Users/zhouwen/PhpProjects/hskyBlogAngular/resources/assets/angular/app',
         loader: 'raw-loader'
       }
     ]
@@ -50,7 +50,7 @@ module.exports = {
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
       /angular(\\|\/)core(\\|\/)@angular/,
-      'Users/zhouwen/PhpProjects/laravelAngular/resources/assets/angular', // location of your src
+      'Users/zhouwen/PhpProjects/hskyBlogAngular/resources/assets/angular', // location of your src
       {} // a map of your routes
     ),
 

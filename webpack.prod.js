@@ -9,7 +9,7 @@ module.exports = webpackMerge(commonConfig, {
   devtool: 'source-map',
 
   output: {
-    path: '/Users/zhouwen/PhpProjects/laravelAngular/public/dist',
+    path: '/Users/zhouwen/PhpProjects/hskyBlogAngular/public/dist',
     publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'

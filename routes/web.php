@@ -16,6 +16,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/app', function () {
+Route::get('/app/{url?}/{param1?}', function () {
     return view('index');
 });

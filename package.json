@@ -8,8 +8,8 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "build": "rimraf dist && webpack --config webpack.prod.js --progress --profile --bail",
-    "devbuild": "rimraf dist && webpack --config webpack.dev.js --progress --profile --bail --watch"
+    "build": "rimraf dist && webpack --config webpack.prod.js --progress --profile --watch",
+    "devbuild": "rimraf dist && webpack --config webpack.prod.js --progress --profile --watch"
   },
   "devDependencies": {
     "@angular/cli": "^1.0.6",
